@@ -4,13 +4,92 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>사내 스터디 계획서</title>
+    <link rel="stylesheet" href="style/index.css">
 </head>
 <body>
     <h1>CSS</h1>
-    <a href="https://opentutorials.org/course/3086">CSS 강의</a>
-    <h2>1 주차</h2>
-    <p>위 강의를 참고하여 CSS에 대해 공부하자.</p>
-    <a href="https://www.w3schools.com/html/html_css.asp">추가 학습 페이지</a>
+    <div class="column-grid">
+        <div>
+        <ol>
+            <li><a href="HTML.html">HTML</a></li>
+            <li><a href="CSS.html">CSS</a></li>
+            <li><a href="JavaScript.html">JavaScript</a></li>
+            <li><a href="chrome_extension.html">Chrome Extension</a></li>
+          </ol>
+        </div>
+        <div>
+            <div class="part">
+                <h2>학습 계획</h2>
+                <a href="https://opentutorials.org/course/3086">CSS 강의</a>
+                <h3>1 주차</h3>
+                <p>위 강의를 참고하여 CSS에 대해 공부하자.</p>
+            </div>
+            <div class="part">
+                <h2>강의 요약</h2>
+                <h3>기본 문법</h3>
+                <p>
+                CSS는 선택자와 선언으로 이루어져 있다.
+                선택자는 스타일을 적용할 HTML 요소를 선택한다.
+                선언은 선택한 요소에 스타일을 적용한다.
+                선언은 속성과 값으로 이루어져있다.
+                선택자는 <span class="codespan">,</span>를 사용해서 여러 개를 선택할 수 있다.
+                </p>
+                <p>
+                기본 문법은 아래와 같다. 여기서 p는 선택자이고 <span class="codespan">{}</span>는 선언이며, 그 안에 있는 color는 속성이며 red는 값이다.
+                <div>
+                    <span style="color: brown">p
+                        <span style="color: black">{</span>
+                            <span style="color: red">
+                                <br>
+                                &nbsp;&nbsp;color
+                                <span style="color: mediumblue">:
+                                    <span style="color: black">red</span>
+                                    <span style="color: black">;</span>
+                                </span>
+                            </span>
+                            <br>
+                        <span style="color: black">}</span>
+                    </span>
+                </div>
+                </p>
+                
+                <h3>선택자 순서</h3>
+                <p>
+                선택자는 스타일을 적용할 HTML 요소를 선택한다. 선택자는 우선순위가 있으며,
+                우선순위는 선택자의 순서에 따라 결정된다.
+                </p>
+                <p>
+                    선택자 순서는 아래 순서대로 적용된다. 
+                    결과적으로 인라인 스타일 속성이 가장 마지막에 적용된다.
+                    <ol>
+                        <li>태그 선택자</li>
+                        <li>클래스 선택자</li>
+                        <li>아이디 선택자</li>
+                        <li>인라인 style 속성</li>
+                    </ol>
+                </p>
+
+                <h3>box model</h3>
+                <p>HTML 태그는 block 레벨의 태그와 inline 레벨의 태그로 나누어진다.</p>
+                <p>
+                    block 레벨의 태그는 한 줄을 모두 차지하는 태그이다.
+                    inline 레벨의 태그는 한 줄에 여러 개를 배치할 수 있는 태그이다.
+                    <span class="codespan">display</span> 속성을 이용해서 태그의 레벨을 변경할 수 있다.
+                </p>
+                <h3>grid</h3>
+                <p>grid는 2차원 형태의 레이아웃을 만들 수 있는 속성이다.</p>
+                <p>
+                    grid는 <span class="codespan">display: grid;</span> 속성을 사용해서 만들 수 있다.
+                </p>
+
+                <h3>반응형 디자인</h3>
+                <p>반응형 디자인은 화면 크기에 따라 레이아웃을 자동으로 조절하는 디자인이다.</p>
+                <p>
+                    media query(<span class="codespan">@media</span>)를 사용해서 반응형 디자인을 구현할 수 있다.
+                </p>
+            </div>
+        </div>
+    </div>
     
-</body>
+  </body>
 </html>
